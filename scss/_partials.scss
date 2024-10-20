@@ -1,0 +1,83 @@
+@import 'variables';
+
+
+.headerGen{
+    background: linear-gradient( $colorHeader 70%, #05142ace );
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    h1{
+        color: $colorTertiary;
+        font-family: $fontPrincipal;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+        }
+        li{
+            color: white;
+            &:hover{
+                color: $colorTertiary;
+                scale: 1.2;
+                text-decoration: solid underline 1px $colorTertiary;
+                transition: all 0.1s;
+            }
+        }        
+    }
+}
+
+.footerGen{
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(#05142ace, $colorHeader 20%);
+    color: white;
+    font-family: $fontPrincipal;
+    width: 100%;
+    .footerTop{
+        display: flex;
+        justify-content: space-between;
+        .footerLeft{
+            ul{
+                margin-block-start: 0em;
+                padding-inline-start: 0px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                }
+                li{
+                    color: white;
+                }
+            }            
+        }
+    }
+    .footerCenter{
+        text-align: center;
+        p{
+            color: rgb(156, 156, 156);
+        }
+    }
+}
+
+.bottomDiv{
+    
+    display: grid;
+    .cardGen{
+        .cardImg{
+            h4{
+                font-weight: bold;
+            }
+        }
+        .cardText{
+            .nivelGen{
+                border: 1.5px solid black;
+                background-color: white;
+                position: relative;
+    
+            }
+        }
+    }
+}

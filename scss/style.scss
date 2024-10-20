@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'partials';
+@import 'mediaQueries';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontPrincipal;
+}
+
+.general{
+    background-color: $colorPrincipal;
+}
+.skills{
+    color: $colorTertiary;
+}
+
+//PAGES
+.contact{
+    .container{
+        background-color: $colorSecondary;
+        .btn{
+            background-color: $colorTertiary;
+        }
+        .message{
+            height: 7em;
+        }
+    }
+}
+.experiences{
+    h2{
+        color: white;
+    }
+    .grilla{
+        width: 100%;
+        display: grid;
+        .card{
+            background-color: rgba(255, 255, 255, 0.726);
+        }
+    }
+}
+.certificates{
+    background-color: $colorPrincipal;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        .card{
+            background-color: rgba(255, 255, 255, 0.726);
+        }
+    }
+}
+.error{
+    .textos{
+        h2{
+            color: white;
+        }
+    }
+}
